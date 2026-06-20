@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="hr" data-lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ─────────────────── SEO ─────────────────── -->
+<title>Ribarski Dvor — Konoba na otoku Prviću | Prvić Šepurine</title>
+<meta name="description" content="Obiteljska konoba Ribarski Dvor u Prvić Šepurinama, na otoku bez automobila. Svježa riba, plodovi mora i jela s gradela — terasa na samome moru. Od 1981. Otvoreno travanj–listopad.">
+<meta name="keywords" content="Ribarski Dvor, konoba Prvić, restoran Prvić Šepurine, riba Prvić, konoba na moru, otok Prvić, Šibenik, Vodice, dolazak brodom, bove Prvić">
+<meta name="author" content="Ribarski Dvor — obitelj Cukrov">
+<meta name="robots" content="index, follow">
+<meta http-equiv="content-language" content="hr">
+
+<!-- ─────────────────── Open Graph ─────────────────── -->
+<meta property="og:title" content="Ribarski Dvor — Konoba na otoku Prviću">
+<meta property="og:description" content="Terasa na samome moru, svježa riba i obiteljska kuhinja. Otok bez auta — doplovi ili dođi trajektom iz Vodica.">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="hr_HR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:site_name" content="Ribarski Dvor">
+<meta property="og:image" content="img/hero.jpeg">
+
+<!-- ─────────────────── Schema.org ─────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Ribarski Dvor",
+  "description": "Obiteljska konoba na otoku Prviću. Svježa riba, plodovi mora i jela s gradela, terasa na samome moru. Od 1981.",
+  "telephone": "+38522448511",
+  "email": "ribarski.dvor@gmail.com",
+  "foundingDate": "1981",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Južna obala 91",
+    "addressLocality": "Prvić Šepurine",
+    "postalCode": "22234",
+    "addressRegion": "Šibensko-kninska županija",
+    "addressCountry": "HR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 43.7299, "longitude": 15.7893 },
+  "servesCuisine": ["Dalmatian", "Mediterranean", "Seafood"],
+  "priceRange": "€€",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "440" },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "11:00", "closes": "23:00",
+    "validFrom": "2026-04-01", "validThrough": "2026-10-15"
+  }]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════ RESET ═══════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+button{font:inherit;cursor:pointer}
+
+:root{
+  --paper:#F2E7D2;       /* topli lan / kreda */
+  --paper-2:#E7D7BB;     /* tamniji lan */
+  --ink:#3A2A1A;         /* pečena umbra — tekst i drvo */
+  --sea:#36697A;         /* prošarana mediteranska plava */
+  --sea-deep:#274B52;    /* duboki petrol — boja ribarske barke */
+  --terra:#A8492A;       /* terakota / opeka */
+  --olive:#6E7140;       /* maslina */
+  --sun:#C5852E;         /* zlatno sunce / žito */
+  --wine:#7A322A;        /* dalmatinsko vino */
+  --line:rgba(58,42,26,.18);
+  --muted:rgba(58,42,26,.66);
+}
+
+body{
+  font-family:'Figtree',system-ui,sans-serif;
+  font-weight:400;
+  color:var(--ink);
+  background:var(--paper);
+  overflow-x:hidden;
+  line-height:1.6;
+}
+
+/* fina papirnata tekstura */
+body::before{
+  content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(224,163,62,.05), transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(28,96,135,.05), transparent 45%);
+}
+
+/* ═══════════════ JEZICI ═══════════════ */
+html[data-lang="hr"] [data-en],html[data-lang="hr"] [data-de]{display:none!important}
+html[data-lang="en"] [data-hr],html[data-lang="en"] [data-de]{display:none!important}
+html[data-lang="de"] [data-hr],html[data-lang="de"] [data-en]{display:none!important}
+
+/* ═══════════════ TIPOGRAFIJA — pomoćno ═══════════════ */
+.serif{font-family:'Fraunces',Georgia,serif}
+.eyebrow{
+  font-family:'Figtree',sans-serif;font-weight:600;
+  font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--terra);
+}
+.section-title{
+  font-family:'Fraunces',serif;font-weight:500;
+  font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.04;
+  letter-spacing:-.015em;color:var(--ink);
+}
+.section-title em{font-style:italic;color:var(--sea)}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 2rem}
+
+/* ═══════════════ NAV ═══════════════ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.5rem clamp(1.2rem,4vw,3rem);
+  transition:background .4s,padding .4s,box-shadow .4s;
+}
+.nav.scrolled{
+  background:rgba(246,241,231,.92);
+  backdrop-filter:blur(12px);
+  padding-top:.95rem;padding-bottom:.95rem;
+  box-shadow:0 1px 0 var(--line);
+}
+.brand{display:flex;align-items:center;gap:.6rem;color:var(--paper);transition:color .4s}
+.nav.scrolled .brand{color:var(--ink)}
+.brand-mark{
+  width:30px;height:30px;flex:0 0 auto;
+}
+.brand-mark svg{width:100%;height:100%;display:block}
+.brand-name{
+  font-family:'Fraunces',serif;font-weight:600;font-size:1.18rem;
+  letter-spacing:.01em;line-height:1;
+}
+.brand-name small{display:block;font-family:'Figtree',sans-serif;font-weight:500;font-size:.52rem;letter-spacing:.34em;text-transform:uppercase;opacity:.7;margin-top:.25rem}
+
+.nav-right{display:flex;align-items:center;gap:2.2rem}
+.nav-links{display:flex;gap:1.8rem;list-style:none}
+.nav-links a{
+  font-size:.78rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--paper);opacity:.85;position:relative;transition:opacity .25s,color .4s;
+}
+.nav.scrolled .nav-links a{color:var(--ink)}
+.nav-links a::after{content:'';position:absolute;left:0;right:100%;bottom:-5px;height:1.5px;background:var(--terra);transition:right .3s ease}
+.nav-links a:hover{opacity:1}
+.nav-links a:hover::after{right:0}
+
+.lang{display:flex;align-items:center;gap:.45rem}
+.lang-btn{
+  font-family:'Fraunces',serif;font-weight:600;font-size:.72rem;letter-spacing:.04em;
+  color:var(--paper);opacity:.55;background:none;border:none;padding:0;transition:opacity .25s,color .4s;
+}
+.nav.scrolled .lang-btn{color:var(--ink)}
+.lang-btn.on{opacity:1;color:var(--sun)}
+.nav.scrolled .lang-btn.on{color:var(--terra)}
+.lang-dot{opacity:.4;font-size:.6rem}
+
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:6px}
+.burger span{display:block;width:24px;height:2px;background:var(--paper);transition:.3s}
+.nav.scrolled .burger span{background:var(--ink)}
+
+/* mobilni meni */
+.mob{position:fixed;inset:0;z-index:1100;background:var(--ink);display:none;flex-direction:column;align-items:center;justify-content:center;gap:1.8rem}
+.mob.open{display:flex}
+.mob a{font-family:'Fraunces',serif;font-weight:500;font-size:2rem;color:var(--paper)}
+.mob a em{font-style:italic;color:var(--sun)}
+.mob-x{position:absolute;top:1.6rem;right:1.8rem;background:none;border:none;color:rgba(246,241,231,.5);font-size:2rem;line-height:1}
+.mob .lang{margin-top:1rem}
+.mob .lang-btn{color:var(--paper);font-size:1rem}
+.mob .lang-btn.on{color:var(--sun)}
+
+/* ═══════════════ HERO ═══════════════ */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-img{position:absolute;inset:0}
+.hero-img img{width:100%;height:100%;object-fit:cover;transform:scale(1.32);transform-origin:center 58%;will-change:transform}
+.hero-img::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(30,17,9,.86) 0%,rgba(40,24,12,.24) 40%,rgba(60,38,18,.08) 62%,rgba(28,16,8,.48) 100%);
+}
+.hero-inner{position:relative;z-index:2;width:100%;padding:0 clamp(1.2rem,4vw,3rem) clamp(2.6rem,6vw,4.5rem)}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:.7rem;margin-bottom:1.4rem;
+  font-family:'Figtree',sans-serif;font-weight:600;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;
+  color:rgba(246,241,231,.92);
+}
+.hero-eyebrow::before{content:'';width:34px;height:1.5px;background:var(--sun)}
+.hero-title{
+  font-family:'Fraunces',serif;font-weight:500;color:var(--paper);
+  font-size:clamp(3rem,9vw,7rem);line-height:.96;letter-spacing:-.02em;
+  text-shadow:0 2px 30px rgba(0,0,0,.25);
+}
+.hero-title em{font-style:italic;color:#fff}
+.hero-sub{
+  margin-top:1.4rem;max-width:34rem;
+  font-size:clamp(1rem,1.5vw,1.18rem);font-weight:300;line-height:1.65;
+  color:rgba(246,241,231,.9);
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.btn{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-family:'Figtree',sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.04em;
+  padding:.95rem 1.7rem;border-radius:100px;transition:transform .2s,background .3s,color .3s,border-color .3s;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--terra);color:#fff;border:1.5px solid var(--terra)}
+.btn-primary:hover{background:#a94e30;border-color:#a94e30}
+.btn-ghost{background:rgba(246,241,231,.08);color:var(--paper);border:1.5px solid rgba(246,241,231,.45);backdrop-filter:blur(4px)}
+.btn-ghost:hover{background:rgba(246,241,231,.18)}
+
+.hero-badges{
+  position:absolute;top:auto;right:clamp(1.2rem,4vw,3rem);bottom:clamp(2.6rem,6vw,4.5rem);z-index:2;
+  display:flex;flex-direction:column;gap:.5rem;align-items:flex-end;
+}
+.hero-badge{
+  display:flex;align-items:center;gap:.5rem;
+  background:rgba(246,241,231,.12);backdrop-filter:blur(8px);
+  border:1px solid rgba(246,241,231,.22);border-radius:100px;
+  padding:.45rem .9rem;color:var(--paper);
+  font-size:.72rem;font-weight:500;letter-spacing:.02em;
+}
+.hero-badge b{font-family:'Fraunces',serif;font-weight:600}
+.hero-badge .star{color:var(--sun)}
+
+/* ═══════════════ TRAKA (info bar) ═══════════════ */
+.strip{background:var(--ink);color:var(--paper)}
+.strip-inner{
+  max-width:1180px;margin:0 auto;padding:1.4rem 2rem;
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1rem 2.6rem;
+  text-align:center;
+}
+.strip-item{display:flex;align-items:center;gap:.6rem;font-size:.82rem;letter-spacing:.02em;color:rgba(246,241,231,.85)}
+.strip-item svg{width:18px;height:18px;stroke:var(--sun);flex:0 0 auto}
+.strip-sep{width:1px;height:18px;background:rgba(246,241,231,.18)}
+
+/* ═══════════════ PRIČA ═══════════════ */
+#prica{padding:clamp(5rem,11vw,9rem) 0}
+.prica-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2.5rem,6vw,6rem);align-items:center}
+.prica-eyebrow{margin-bottom:1.3rem}
+.prica-body{margin-top:1.6rem;max-width:34rem}
+.prica-body p{color:var(--muted);font-size:1.02rem;line-height:1.85}
+.prica-body p+p{margin-top:1.1rem}
+.prica-sign{
+  margin-top:2rem;display:flex;align-items:center;gap:1rem;
+}
+.prica-sign .nm{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:1.25rem;color:var(--sea)}
+.prica-sign .role{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+
+/* arched image frame — motiv lučnih svodova kuće */
+.arch{
+  position:relative;overflow:hidden;
+  border-radius:240px 240px 18px 18px;
+  box-shadow:0 30px 60px -28px rgba(21,50,63,.5);
+}
+.arch::after{content:'';position:absolute;inset:0;border-radius:inherit;border:1px solid rgba(246,241,231,.5);pointer-events:none}
+.arch img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.arch:hover img{transform:scale(1.04)}
+.prica-photo{position:relative}
+.prica-photo .arch{aspect-ratio:3/4}
+.prica-photo-cap{
+  position:absolute;left:-1.2rem;bottom:2rem;z-index:3;
+  background:var(--paper);border:1px solid var(--line);border-radius:14px;
+  padding:.85rem 1.1rem;box-shadow:0 18px 40px -18px rgba(21,50,63,.4);
+  max-width:200px;
+}
+.prica-photo-cap .big{font-family:'Fraunces',serif;font-weight:600;font-size:1.7rem;color:var(--terra);line-height:1}
+.prica-photo-cap .sm{font-size:.74rem;color:var(--muted);margin-top:.25rem;line-height:1.4}
+
+/* ═══════════════ DOLAZAK ═══════════════ */
+#dolazak{background:var(--sea-deep);color:var(--paper);position:relative;overflow:hidden;padding:clamp(5rem,11vw,8.5rem) 0}
+#dolazak::before{content:'';position:absolute;top:-120px;right:-100px;width:420px;height:420px;border-radius:50%;border:90px solid rgba(246,241,231,.05)}
+.dolazak-head{max-width:38rem;position:relative;z-index:2}
+.dolazak-head .eyebrow{color:var(--sun)}
+.dolazak-head .section-title{color:var(--paper);margin-top:1rem}
+.dolazak-head .section-title em{color:#fff}
+.dolazak-head p{margin-top:1.3rem;color:rgba(246,241,231,.8);font-size:1.05rem;line-height:1.8;max-width:33rem}
+.steps{
+  margin-top:3rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;position:relative;z-index:2;
+}
+.step{
+  background:rgba(246,241,231,.07);border:1px solid rgba(246,241,231,.15);border-radius:18px;
+  padding:1.8rem 1.6rem;transition:background .3s,transform .3s;
+}
+.step:hover{background:rgba(246,241,231,.12);transform:translateY(-3px)}
+.step-ico{width:46px;height:46px;border-radius:12px;background:rgba(224,163,62,.16);display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem}
+.step-ico svg{width:24px;height:24px;stroke:var(--sun)}
+.step-n{font-family:'Fraunces',serif;font-style:italic;font-size:.9rem;color:var(--sun);margin-bottom:.4rem}
+.step h4{font-family:'Fraunces',serif;font-weight:600;font-size:1.2rem;margin-bottom:.5rem}
+.step p{color:rgba(246,241,231,.72);font-size:.92rem;line-height:1.6}
+
+/* ═══════════════ KUHINJA / JELOVNIK ═══════════════ */
+#kuhinja{padding:clamp(5rem,11vw,9rem) 0}
+.kuhinja-head{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end;
+  padding-bottom:2rem;border-bottom:1px solid var(--line);margin-bottom:3rem}
+.kuhinja-head .note{max-width:22rem;text-align:right;font-size:.9rem;color:var(--muted);line-height:1.65}
+.menu{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(2rem,5vw,4rem) clamp(2.5rem,6vw,5rem)}
+.menu-col h3{
+  font-family:'Fraunces',serif;font-weight:600;font-size:1.5rem;color:var(--ink);
+  display:flex;align-items:center;gap:.7rem;margin-bottom:1.5rem;
+}
+.menu-col h3 .ic{width:34px;height:34px;border-radius:9px;background:var(--paper-2);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.menu-col h3 .ic svg{width:19px;height:19px;stroke:var(--terra)}
+.dish{display:flex;justify-content:space-between;gap:1rem;padding:.85rem 0;border-bottom:1px dashed var(--line)}
+.dish:last-child{border-bottom:none}
+.dish-nm{font-weight:500;color:var(--ink)}
+.dish-ds{font-size:.84rem;color:var(--muted);margin-top:.15rem;line-height:1.45}
+.dish-tag{
+  flex:0 0 auto;align-self:flex-start;margin-top:.2rem;
+  font-family:'Fraunces',serif;font-style:italic;font-size:.82rem;color:var(--sea);white-space:nowrap;
+}
+.menu-foot{
+  margin-top:3rem;background:var(--paper-2);border-radius:18px;padding:1.6rem 1.8rem;
+  display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem;
+}
+.menu-foot p{font-size:.92rem;color:var(--muted);flex:1 1 300px;line-height:1.6}
+.menu-foot .pk{font-family:'Fraunces',serif;font-style:italic;color:var(--terra);font-weight:500}
+
+/* ═══════════════ GALERIJA ═══════════════ */
+#galerija{padding:clamp(4rem,9vw,7rem) 0 clamp(5rem,11vw,8rem)}
+.gal-head{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:2.4rem}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+.gcell{position:relative;overflow:hidden;border-radius:16px}
+.gcell img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease;filter:saturate(1.02)}
+.gcell:hover img{transform:scale(1.06)}
+.gcell::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(11,33,44,.35));opacity:0;transition:opacity .4s}
+.gcell:hover::after{opacity:1}
+.g-tall{grid-row:span 2}
+.g-wide{grid-column:span 2}
+
+/* ═══════════════ RECENZIJE ═══════════════ */
+#glas{background:var(--paper-2);padding:clamp(5rem,11vw,8rem) 0}
+.glas-top{text-align:center;max-width:40rem;margin:0 auto 3rem}
+.stars{font-size:1.4rem;color:var(--sun);letter-spacing:.15em;margin:1rem 0 .4rem}
+.glas-meta{font-size:.86rem;color:var(--muted);letter-spacing:.04em}
+.glas-meta b{color:var(--ink)}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.quote{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:1.8rem 1.7rem;position:relative}
+.quote .mark{font-family:'Fraunces',serif;font-size:3.4rem;line-height:.6;color:var(--terra);opacity:.25;margin-bottom:.4rem}
+.quote p{font-size:.98rem;line-height:1.7;color:var(--ink)}
+.quote .by{margin-top:1.1rem;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* ═══════════════ KONTAKT ═══════════════ */
+#kontakt{padding:clamp(5rem,11vw,9rem) 0}
+.kon-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,5rem);align-items:stretch}
+.kon-left .section-title{margin:1rem 0 1.6rem}
+.kon-phone{
+  display:inline-block;font-family:'Fraunces',serif;font-weight:600;
+  font-size:clamp(1.7rem,3.4vw,2.5rem);color:var(--sea);letter-spacing:-.01em;transition:color .25s;
+}
+.kon-phone:hover{color:var(--terra)}
+.kon-rows{margin-top:2rem;display:flex;flex-direction:column;gap:1.3rem}
+.kon-row{display:flex;gap:1rem;align-items:flex-start}
+.kon-row .ic{width:42px;height:42px;flex:0 0 auto;border-radius:11px;background:var(--paper-2);display:flex;align-items:center;justify-content:center}
+.kon-row .ic svg{width:20px;height:20px;stroke:var(--terra)}
+.kon-row .lbl{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.2rem}
+.kon-row .val{font-size:1rem;color:var(--ink);line-height:1.5}
+.kon-row .val a:hover{color:var(--sea)}
+.kon-cta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.8rem}
+
+.kon-card{
+  background:var(--ink);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;
+  box-shadow:0 30px 60px -30px rgba(21,50,63,.55);
+}
+.kon-card-img{height:230px;position:relative}
+.kon-card-img img{width:100%;height:100%;object-fit:cover}
+.kon-card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(11,33,44,.7))}
+.kon-card-body{padding:1.8rem;color:var(--paper)}
+.kon-card-body .h{font-family:'Fraunces',serif;font-weight:600;font-size:1.3rem;margin-bottom:.4rem}
+.kon-card-body .h em{font-style:italic;color:var(--sun)}
+.kon-card-body p{color:rgba(246,241,231,.72);font-size:.9rem;line-height:1.6;margin-bottom:1.3rem}
+.kon-hours{display:flex;flex-direction:column;gap:.55rem}
+.kon-hr{display:flex;justify-content:space-between;font-size:.88rem;padding-bottom:.55rem;border-bottom:1px solid rgba(246,241,231,.12)}
+.kon-hr:last-child{border-bottom:none;padding-bottom:0}
+.kon-hr span:first-child{color:rgba(246,241,231,.7)}
+.kon-hr span:last-child{font-family:'Fraunces',serif;font-weight:500}
+.kon-hr .clsd{color:var(--terra);font-style:italic}
+.map-btn{
+  display:inline-flex;align-items:center;gap:.55rem;margin-top:1.5rem;
+  font-size:.8rem;font-weight:600;letter-spacing:.04em;
+  background:rgba(246,241,231,.1);border:1px solid rgba(246,241,231,.25);border-radius:100px;
+  padding:.7rem 1.3rem;color:var(--paper);transition:background .3s;
+}
+.map-btn:hover{background:rgba(246,241,231,.2)}
+.map-btn svg{width:16px;height:16px;stroke:var(--sun)}
+
+/* ═══════════════ FOOTER ═══════════════ */
+footer{background:var(--ink);color:var(--paper);padding:clamp(3rem,6vw,4.5rem) 0 2rem}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem;align-items:flex-start;padding-bottom:2.5rem;border-bottom:1px solid rgba(246,241,231,.12)}
+.foot-brand{display:flex;align-items:center;gap:.7rem}
+.foot-brand .brand-mark{width:34px;height:34px}
+.foot-brand .brand-name{color:var(--paper)}
+.foot-tagline{max-width:24rem;color:rgba(246,241,231,.6);font-size:.92rem;line-height:1.7;margin-top:1rem}
+.foot-links{display:flex;gap:2.2rem;flex-wrap:wrap}
+.foot-col h5{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sun);margin-bottom:.9rem}
+.foot-col a,.foot-col p{display:block;color:rgba(246,241,231,.72);font-size:.9rem;margin-bottom:.5rem;transition:color .25s}
+.foot-col a:hover{color:var(--paper)}
+.foot-bot{padding-top:1.8rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;font-size:.74rem;color:rgba(246,241,231,.4);letter-spacing:.04em}
+
+/* ═══════════════ REVEAL ═══════════════ */
+.r{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.r.in{opacity:1;transform:none}
+.r.d1{transition-delay:.08s}.r.d2{transition-delay:.16s}.r.d3{transition-delay:.24s}.r.d4{transition-delay:.32s}
+
+/* ═══════════════ RESPONSIVE ═══════════════ */
+@media(max-width:920px){
+  .nav-right{display:none}
+  .burger{display:flex}
+  .prica-grid{grid-template-columns:1fr;gap:3rem}
+  .prica-photo{max-width:420px;margin:0 auto}
+  .steps{grid-template-columns:1fr}
+  .menu{grid-template-columns:1fr;gap:2.5rem}
+  .kuhinja-head{grid-template-columns:1fr}
+  .kuhinja-head .note{text-align:left}
+  .quotes{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
+  .kon-grid{grid-template-columns:1fr}
+}
+@media(max-width:540px){
+  .wrap{padding:0 1.3rem}
+  .hero-badges{display:none}
+  .gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:130px}
+  .g-wide{grid-column:span 2}
+  .strip-sep{display:none}
+  .foot-top{flex-direction:column}
+}
+
+/* ═══════════════ RUSTIKALNI SLOJ ═══════════════ */
+/* zrnata papirnata/lanena tekstura preko cijele stranice */
+body::after{
+  content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.06;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+/* topli vez i drvena tekstura na tamnim plohama */
+.strip,#dolazak,footer,.kon-card{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-blend-mode:soft-light;
+}
+
+/* gumbi — utisnuti, „pečatni" rustikalni rub */
+.btn{border-radius:9px;box-shadow:inset 0 -2px 0 rgba(0,0,0,.18)}
+.btn-primary{border-color:#8c3a20}
+.menu-foot .btn-primary{box-shadow:inset 0 -2px 0 rgba(0,0,0,.22)}
+
+/* kartice — toplije, čvršće, manje zaobljene + drveni rub */
+.step{border-radius:12px;border-color:rgba(242,231,210,.22)}
+.quote{border-radius:12px;border:1px solid var(--line);box-shadow:0 14px 30px -22px rgba(58,42,26,.5)}
+.menu-foot{border-radius:12px;border:1px solid var(--line)}
+.kon-card{border-radius:14px;border:1px solid rgba(58,42,26,.5)}
+.kon-row .ic,.menu-col h3 .ic{border-radius:9px;border:1px solid var(--line)}
+.step-ico{border-radius:10px}
+
+/* eyebrow — mali rustikalni „žig" ispred natpisa */
+.eyebrow{display:inline-flex;align-items:center;gap:.55rem}
+.eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--terra);box-shadow:0 0 0 3px rgba(168,73,42,.18)}
+.dolazak-head .eyebrow::before{background:var(--sun);box-shadow:0 0 0 3px rgba(197,133,46,.2)}
+.glas-top .eyebrow{justify-content:center}
+
+/* tople sjene umjesto hladnih + topli overlay na galeriji/kartici */
+.arch{box-shadow:0 30px 60px -28px rgba(58,30,12,.55)}
+.gcell::after{background:linear-gradient(transparent 55%,rgba(34,18,8,.42))}
+.kon-card-img::after{background:linear-gradient(transparent 40%,rgba(28,16,8,.72))}
+.prica-photo-cap{border-radius:12px;box-shadow:0 18px 40px -18px rgba(58,30,12,.45)}
+
+/* podebljani natpisi za rustikalniji, „ručni" karakter */
+.section-title,.hero-title{font-weight:600}
+
+/* ═══════════════ SPLITTEXT — reveal slovo po slovo / riječ po riječ ═══════════════ */
+.su{
+  display:inline-block;opacity:0;
+  transform:translateY(.62em) rotate(4deg);
+  transition:opacity .5s ease,transform .6s cubic-bezier(.2,.75,.25,1);
+  will-change:opacity,transform;
+}
+.split-c.in .su,.split-w.in .su{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .su{opacity:1!important;transform:none!important;transition:none}
+}
+
+/* ═══════════════ GALERIJA — clip-path reveal ═══════════════ */
+.gcell{
+  clip-path:inset(0 0 100% 0 round 16px);
+  transform:scale(1.06);
+  transition:clip-path 1s cubic-bezier(.66,0,.18,1),transform 1.25s ease;
+}
+.gal-grid.in .gcell{clip-path:inset(0 0 0 0 round 16px);transform:scale(1)}
+.gcell:nth-child(2){transition-delay:.08s}
+.gcell:nth-child(3){transition-delay:.16s}
+.gcell:nth-child(4){transition-delay:.12s}
+.gcell:nth-child(5){transition-delay:.2s}
+.gcell:nth-child(6){transition-delay:.1s}
+.gcell:nth-child(7){transition-delay:.18s}
+@media(prefers-reduced-motion:reduce){
+  .gcell{clip-path:none!important;transform:none!important;transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav class="nav" id="nav">
+  <a href="#top" class="brand">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M11 24c4-6 14-6 18 0M14 20c0-3 2.6-5 6-5s6 2 6 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <circle cx="20" cy="15" r="1.6" fill="currentColor"/>
+        <path d="M20 28v6M16 34h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="brand-name">Ribarski Dvor<small>Prvić · Dalmacija</small></span>
+  </a>
+
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#prica"><span data-hr>Priča</span><span data-en>Story</span><span data-de>Geschichte</span></a></li>
+      <li><a href="#dolazak"><span data-hr>Dolazak</span><span data-en>Getting here</span><span data-de>Anreise</span></a></li>
+      <li><a href="#kuhinja"><span data-hr>Kuhinja</span><span data-en>Kitchen</span><span data-de>Küche</span></a></li>
+      <li><a href="#galerija"><span data-hr>Galerija</span><span data-en>Gallery</span><span data-de>Galerie</span></a></li>
+      <li><a href="#kontakt"><span data-hr>Kontakt</span><span data-en>Contact</span><span data-de>Kontakt</span></a></li>
+    </ul>
+    <div class="lang">
+      <button class="lang-btn on" data-l="hr" onclick="setLang('hr')">HR</button><span class="lang-dot">·</span>
+      <button class="lang-btn" data-l="en" onclick="setLang('en')">EN</button><span class="lang-dot">·</span>
+      <button class="lang-btn" data-l="de" onclick="setLang('de')">DE</button>
+    </div>
+  </div>
+
+  <button class="burger" onclick="toggleMob()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- mobilni meni -->
+<div class="mob" id="mob">
+  <button class="mob-x" onclick="toggleMob()" aria-label="Close">&times;</button>
+  <a href="#prica" onclick="toggleMob()"><span data-hr>Priča</span><span data-en>Story</span><span data-de>Geschichte</span></a>
+  <a href="#dolazak" onclick="toggleMob()"><span data-hr>Dolazak</span><span data-en>Getting here</span><span data-de>Anreise</span></a>
+  <a href="#kuhinja" onclick="toggleMob()"><span data-hr>Kuhinja</span><span data-en>Kitchen</span><span data-de>Küche</span></a>
+  <a href="#galerija" onclick="toggleMob()"><span data-hr>Galerija</span><span data-en>Gallery</span><span data-de>Galerie</span></a>
+  <a href="#kontakt" onclick="toggleMob()"><span data-hr>Kontakt</span><span data-en>Contact</span><span data-de>Kontakt</span></a>
+  <div class="lang">
+    <button class="lang-btn on" data-l="hr" onclick="setLang('hr')">HR</button><span class="lang-dot">·</span>
+    <button class="lang-btn" data-l="en" onclick="setLang('en')">EN</button><span class="lang-dot">·</span>
+    <button class="lang-btn" data-l="de" onclick="setLang('de')">DE</button>
+  </div>
+</div>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<header class="hero" id="top">
+  <div class="hero-img"><img src="img/zalazak.jpeg" alt="Zalazak sunca nad uvalom Šepurine s usidrenim jedrilicama — pogled s terase konobe Ribarski Dvor"></div>
+
+  <div class="hero-badges">
+    <span class="hero-badge"><span class="star">★</span> <b>4,4</b> · Google &amp; TripAdvisor</span>
+    <span class="hero-badge"><span data-hr>#1 u Prvić Šepurinama</span><span data-en>#1 in Prvić Šepurine</span><span data-de>#1 in Prvić Šepurine</span></span>
+  </div>
+
+  <div class="hero-inner">
+    <p class="hero-eyebrow"><span data-hr>Obiteljska konoba · od 1981.</span><span data-en>Family tavern · since 1981</span><span data-de>Familienkonoba · seit 1981</span></p>
+    <h1 class="hero-title">Ribarski <em>Dvor</em></h1>
+    <p class="hero-sub">
+      <span data-hr>Terasa na samome moru, svježa riba i jela s gradela — na otoku bez automobila, do kojeg se dolazi brodom ili trajektom.</span>
+      <span data-en>A terrace right on the water, fresh fish and food off the grill — on a car-free island you reach by boat or ferry.</span>
+      <span data-de>Eine Terrasse direkt am Meer, frischer Fisch und Gegrilltes — auf einer autofreien Insel, die Sie per Boot oder Fähre erreichen.</span>
+    </p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn btn-primary">
+        <span data-hr>Rezerviraj stol</span><span data-en>Reserve a table</span><span data-de>Tisch reservieren</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#kuhinja" class="btn btn-ghost"><span data-hr>Pogledaj kuhinju</span><span data-en>See the kitchen</span><span data-de>Zur Küche</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════ INFO TRAKA ═══════════════ -->
+<div class="strip">
+  <div class="strip-inner">
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 8l7-4 7 4M4 14h16l-1 6H5z"/></svg>
+      <span data-hr>Dolazak brodom — 4 vlastite bove u uvali</span><span data-en>Arrive by boat — 4 private mooring buoys</span><span data-de>Anreise per Boot — 4 eigene Bojen</span>
+    </div>
+    <div class="strip-sep"></div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <span data-hr>Otvoreno travanj – listopad</span><span data-en>Open April – October</span><span data-de>Geöffnet April – Oktober</span>
+    </div>
+    <div class="strip-sep"></div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8z"/></svg>
+      <span data-hr>Trajekt iz Vodica · 20 min</span><span data-en>Ferry from Vodice · 20 min</span><span data-de>Fähre ab Vodice · 20 Min.</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ PRIČA ═══════════════ -->
+<section id="prica">
+  <div class="wrap">
+    <div class="prica-grid">
+      <div class="prica-text">
+        <p class="eyebrow prica-eyebrow"><span data-hr>Naša priča</span><span data-en>Our story</span><span data-de>Unsere Geschichte</span></p>
+        <h2 class="section-title">
+          <span data-hr>Ista obitelj,<br>ista <em>vatra</em> — od 1981.</span>
+          <span data-en>Same family,<br>same <em>fire</em> — since 1981.</span>
+          <span data-de>Dieselbe Familie,<br>dasselbe <em>Feuer</em> — seit 1981.</span>
+        </h2>
+        <div class="prica-body">
+          <p data-hr>Ribarski Dvor obiteljska je konoba u Prvić Šepurinama, smještena u mirnoj uvali Trstevica, na samome rubu mora. Vodi je obitelj Cukrov — već više od četrdeset godina, iz iste kuhinje i s istim mirom.</p>
+          <p data-en>Ribarski Dvor is a family-run tavern in Prvić Šepurine, set in the quiet Trstevica cove, right at the water's edge. The Cukrov family has run it for over forty years — from the same kitchen, at the same unhurried pace.</p>
+          <p data-de>Ribarski Dvor ist eine familiengeführte Konoba in Prvić Šepurine, in der ruhigen Bucht Trstevica, direkt am Wasser. Die Familie Cukrov führt sie seit über vierzig Jahren — aus derselben Küche, in derselben Ruhe.</p>
+
+          <p data-hr>Pod lozom i bijelim kamenim svodovima, uz domaće maslinovo ulje i ribu koja stiže ujutro, vrijeme teče sporije. Ne mijenjamo ono što već desetljećima dobro radi.</p>
+          <p data-en>Under the grapevine and white stone arches, with our own olive oil and fish that arrives each morning, time runs slower. We don't change what has worked well for decades.</p>
+          <p data-de>Unter Weinlaub und weißen Steinbögen, mit eigenem Olivenöl und Fisch, der jeden Morgen ankommt, vergeht die Zeit langsamer. Wir ändern nicht, was seit Jahrzehnten gut funktioniert.</p>
+        </div>
+        <div class="prica-sign">
+          <div>
+            <div class="nm">Obitelj Cukrov</div>
+            <div class="role"><span data-hr>Boris, Jadrana &amp; Ena · domaćini</span><span data-en>Boris, Jadrana &amp; Ena · your hosts</span><span data-de>Boris, Jadrana &amp; Ena · Ihre Gastgeber</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prica-photo r">
+        <div class="arch"><img src="img/svod.jpeg" alt="Pogled kroz kameni svod konobe prema moru, brodu i pomolu"></div>
+        <div class="prica-photo-cap">
+          <div class="big">40+</div>
+          <div class="sm"><span data-hr>godina obiteljske kuhinje na Prviću</span><span data-en>years of family cooking on Prvić</span><span data-de>Jahre Familienküche auf Prvić</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ DOLAZAK ═══════════════ -->
+<section id="dolazak">
+  <div class="wrap">
+    <div class="dolazak-head r">
+      <p class="eyebrow"><span data-hr>Kako do nas</span><span data-en>How to reach us</span><span data-de>So finden Sie uns</span></p>
+      <h2 class="section-title">
+        <span data-hr>Otok bez auta.<br>Dođi <em>brodom</em>.</span>
+        <span data-en>A car-free island.<br>Come <em>by boat</em>.</span>
+        <span data-de>Eine autofreie Insel.<br>Kommen Sie <em>per Boot</em>.</span>
+      </h2>
+      <p>
+        <span data-hr>Prvić je otok bez automobila. Doplovite vlastitim brodom i privežite se na jednu od naših bova u uvali, ili dođite trajektom iz Vodica i Šibenika — pa lagana šetnja rivom do stola.</span>
+        <span data-en>Prvić is a car-free island. Sail in and tie up to one of our buoys in the cove, or take the ferry from Vodice and Šibenik — then a gentle stroll along the seafront to your table.</span>
+        <span data-de>Prvić ist eine autofreie Insel. Kommen Sie mit dem eigenen Boot und machen Sie an einer unserer Bojen fest, oder nehmen Sie die Fähre ab Vodice und Šibenik — danach ein kurzer Spaziergang an der Uferpromenade zu Ihrem Tisch.</span>
+      </p>
+    </div>
+
+    <div class="steps">
+      <div class="step r d1">
+        <div class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18l-2-6H5zM12 12V4M12 4l4 2M12 4L8 6"/></svg></div>
+        <div class="step-n"><span data-hr>Brodom</span><span data-en>By boat</span><span data-de>Per Boot</span></div>
+        <h4><span data-hr>Vežite se na bovu</span><span data-en>Tie up to a buoy</span><span data-de>An der Boje festmachen</span></h4>
+        <p><span data-hr>Četiri vlastite bove u uvali Trstevica. Najavite dolazak telefonom i sigurno smo vam čuvali vez.</span><span data-en>Four private buoys in Trstevica cove. Call ahead and we'll keep a mooring for you.</span><span data-de>Vier eigene Bojen in der Bucht Trstevica. Rufen Sie an, wir halten einen Liegeplatz frei.</span></p>
+      </div>
+      <div class="step r d2">
+        <div class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8z"/></svg></div>
+        <div class="step-n"><span data-hr>Trajektom</span><span data-en>By ferry</span><span data-de>Per Fähre</span></div>
+        <h4><span data-hr>Jadrolinija, linija 505</span><span data-en>Jadrolinija, line 505</span><span data-de>Jadrolinija, Linie 505</span></h4>
+        <p><span data-hr>Vodice – Prvić – Zlarin – Šibenik. Iz Vodica ste na Prviću za dvadesetak minuta.</span><span data-en>Vodice – Prvić – Zlarin – Šibenik. From Vodice you reach Prvić in about twenty minutes.</span><span data-de>Vodice – Prvić – Zlarin – Šibenik. Ab Vodice sind Sie in etwa zwanzig Minuten auf Prvić.</span></p>
+      </div>
+      <div class="step r d3">
+        <div class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21c5-5 7-8 7-11a7 7 0 10-14 0c0 3 2 6 7 11z"/></svg></div>
+        <div class="step-n"><span data-hr>Autom</span><span data-en>By car</span><span data-de>Mit dem Auto</span></div>
+        <h4><span data-hr>Parkiraj u Vodicama</span><span data-en>Park in Vodice</span><span data-de>In Vodice parken</span></h4>
+        <p><span data-hr>Auto ostavite na kopnu u Vodicama, a ostatak puta je morem. Otok je samo za pješake.</span><span data-en>Leave the car on the mainland in Vodice; the rest is by sea. The island is for pedestrians only.</span><span data-de>Lassen Sie das Auto in Vodice auf dem Festland; der Rest geht übers Meer. Die Insel ist nur für Fußgänger.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ KUHINJA ═══════════════ -->
+<section id="kuhinja">
+  <div class="wrap">
+    <div class="kuhinja-head">
+      <div>
+        <p class="eyebrow"><span data-hr>Iz naše kuhinje</span><span data-en>From our kitchen</span><span data-de>Aus unserer Küche</span></p>
+        <h2 class="section-title" style="margin-top:.8rem">
+          <span data-hr>Dalmacija na <em>tanjuru</em></span><span data-en>Dalmatia on a <em>plate</em></span><span data-de>Dalmatien auf dem <em>Teller</em></span>
+        </h2>
+      </div>
+      <p class="note">
+        <span data-hr>Jelovnik se mijenja s ulovom i sezonom. Ovo je presjek onoga što najčešće stigne na stol.</span>
+        <span data-en>The menu shifts with the catch and the season. Here's a taste of what most often reaches the table.</span>
+        <span data-de>Die Karte wechselt mit Fang und Saison. Hier ein Auszug dessen, was am häufigsten auf den Tisch kommt.</span>
+      </p>
+    </div>
+
+    <div class="menu">
+      <!-- Riba i more -->
+      <div class="menu-col r">
+        <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c4-6 14-6 18 0-4 6-14 6-18 0z"/><circle cx="8.5" cy="12" r="1"/></svg></span><span data-hr>Riba i plodovi mora</span><span data-en>Fish &amp; seafood</span><span data-de>Fisch &amp; Meeresfrüchte</span></h3>
+        <div class="dish"><div><div class="dish-nm"><span data-hr>Svježa riba s gradela</span><span data-en>Fresh fish off the grill</span><span data-de>Frischer Fisch vom Grill</span></div><div class="dish-ds"><span data-hr>Brancin, orada i dnevni ulov, na lešo ili s maslinovim uljem</span><span data-en>Sea bass, sea bream &amp; the daily catch, grilled or poached</span><span data-de>Wolfsbarsch, Dorade &amp; Tagesfang, gegrillt oder pochiert</span></div></div><div class="dish-tag"><span data-hr>dnevni ulov</span><span data-en>daily catch</span><span data-de>Tagesfang</span></div></div>
+        <div class="dish"><div><div class="dish-nm"><span data-hr>Lignje na žaru i pržene</span><span data-en>Squid, grilled &amp; fried</span><span data-de>Tintenfisch, gegrillt &amp; frittiert</span></div><div class="dish-ds"><span data-hr>Klasik dalmatinske terase</span><span data-en>A Dalmatian terrace classic</span><span data-de>Ein Klassiker der dalmatinischen Terrasse</span></div></div></div>
+        <div class="dish"><div><div class="dish-nm"><span data-hr>Crni rižoto</span><span data-en>Black risotto</span><span data-de>Schwarzes Risotto</span></div><div class="dish-ds"><span data-hr>Sa sipom, gusto i domaće</span><span data-en>With cuttlefish, rich and homemade</span><span data-de>Mit Tintenfisch, kräftig und hausgemacht</span></div></div></div>
+        <div class="dish"><div><div class="dish-nm"><span data-hr>Salata i pašteta od hobotnice</span><span data-en>Octopus salad &amp; pâté</span><span data-de>Oktopussalat &amp; -paste</span></div><div class="dish-ds"><span data-hr>Hladno, lagano, mediteranski</span><span data-en>Cool, light, Mediterranean</span><span data-de>Kühl, leicht, mediterran</span></div></div></div>
+        <div class="dish"><div><div class="dish-nm"><span data-hr>Školjke na buzaru</span><span data-en>Shellfish buzara</span><span data-de>Muscheln „Buzara“</span></div><div class="dish-ds"><span data-hr>Dagnje i vongole, bijelo vino i češnjak</span><span data-en>Mussels &amp; clams, white wine and garlic</span><span data-de>Miesmuscheln &amp; Venusmuscheln, Weißwein und Knoblauch</span></div></div></div>
+      </div>
+
+      <!-- Kuhinja kopna + vino -->
+      <div class="menu-col r d1">
+        <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V10M5 10c-2 0-3-2-3-4 0-1 .5-3 3-3M9 21V3M9 8c2 0 3-1 3-3"/><path d="M19 21v-7M19 14c2 0 3-2 3-5s-2-6-3-6-3 3-3 6 1 5 3 5z"/></svg></span><span data-hr>S kopna i iz konobe</span><span data-en>From the land &amp; cellar</span><span data-de>Vom Land &amp; aus dem Keller</span></h3>
+        <div class="dish"><div><div class="dish-nm"><span data-hr>Dalmatinska pašticada</span><span data-en>Dalmatian pašticada</span><span data-de>Dalmatinische Pašticada</span></div><div class="dish-ds"><span data-hr>Sporo pirjana junetina s domaćim njokima</span><span data-en>Slow-braised beef with homemade gnocchi</span><span data-de>Langsam geschmortes Rind mit hausgemachten Gnocchi</span></div></div><div class="dish-tag"><span data-hr>kuća preporuča</span><span data-en>house favourite</span><span data-de>Hausempfehlung</span></div></div>
+        <div class="dish"><div><div class="dish-nm"><span data-hr>Meso s gradela</span><span data-en>Grilled meats</span><span data-de>Fleisch vom Grill</span></div><div class="dish-ds"><span data-hr>Za one koji ne jedu ribu — jednako pažljivo</span><span data-en>For those who skip fish — same care</span><span data-de>Für alle ohne Fisch — mit gleicher Sorgfalt</span></div></div></div>
+        <div class="dish"><div><div class="dish-nm"><span data-hr>Domaće maslinovo ulje</span><span data-en>Our own olive oil</span><span data-de>Eigenes Olivenöl</span></div><div class="dish-ds"><span data-hr>S okolnih maslinika, uz svježi kruh</span><span data-en>From nearby groves, with fresh bread</span><span data-de>Aus nahen Hainen, mit frischem Brot</span></div></div></div>
+        <div class="dish"><div><div class="dish-nm"><span data-hr>Vrhunska vina</span><span data-en>Fine wines</span><span data-de>Edle Weine</span></div><div class="dish-ds"><span data-hr>Pažljivo biran izbor dalmatinskih i hrvatskih vina</span><span data-en>A curated list of Dalmatian &amp; Croatian wines</span><span data-de>Eine ausgewählte Karte dalmatinischer &amp; kroatischer Weine</span></div></div></div>
+        <div class="dish"><div><div class="dish-nm"><span data-hr>Domaća rakija</span><span data-en>Homemade rakija</span><span data-de>Hausgemachter Rakija</span></div><div class="dish-ds"><span data-hr>Travarica i loza — za kraj, kako i red nalaže</span><span data-en>Herbal &amp; grape brandy — to finish, as tradition asks</span><span data-de>Kräuter- &amp; Traubenbrand — zum Abschluss, wie es Brauch ist</span></div></div></div>
+      </div>
+    </div>
+
+    <div class="menu-foot r">
+      <p>
+        <span data-hr><span class="pk">Peku</span> (hobotnica, janjetina ili teletina ispod peke) i veće svježe ribe rado pripremamo — najavite dan ranije telefonom.</span>
+        <span data-en><span class="pk">Peka</span> (octopus, lamb or veal under the bell) and larger fresh fish are our pleasure — just call a day in advance.</span>
+        <span data-de><span class="pk">Peka</span> (Oktopus, Lamm oder Kalb unter der Glocke) und größere frische Fische bereiten wir gern zu — bitte einen Tag vorher anrufen.</span>
+      </p>
+      <a href="tel:+38522448511" class="btn btn-primary"><span data-hr>Najavi peku</span><span data-en>Pre-order peka</span><span data-de>Peka vorbestellen</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ GALERIJA ═══════════════ -->
+<section id="galerija">
+  <div class="wrap">
+    <div class="gal-head">
+      <div>
+        <p class="eyebrow"><span data-hr>Galerija</span><span data-en>Gallery</span><span data-de>Galerie</span></p>
+        <h2 class="section-title" style="margin-top:.8rem"><span data-hr>Mjesto na <em>moru</em></span><span data-en>A place on the <em>sea</em></span><span data-de>Ein Ort am <em>Meer</em></span></h2>
+      </div>
+    </div>
+    <div class="gal-grid">
+      <div class="gcell g-wide g-tall"><img src="img/terasa.jpeg" alt="Terasa pod jedrenom tendom uz more, maslina i bicikl" loading="lazy"></div>
+      <div class="gcell"><img src="img/interijer.jpeg" alt="Unutrašnjost konobe s plavim zidovima i kamenim šankom" loading="lazy"></div>
+      <div class="gcell"><img src="img/pergola.jpeg" alt="Pergola i plavi stolci na terasi uz uvalu" loading="lazy"></div>
+      <div class="gcell"><img src="img/riva.jpeg" alt="Riva i pristup terasi uz more" loading="lazy"></div>
+      <div class="gcell"><img src="img/terasa2.jpeg" alt="Plavi stolci na terasi s pogledom na plažu i more" loading="lazy"></div>
+      <div class="gcell g-wide"><img src="img/zalazak.jpeg" alt="Zalazak sunca nad uvalom s usidrenim jedrilicama" loading="lazy"></div>
+      <div class="gcell"><img src="img/interijer2.jpeg" alt="Natkrivena terasa s drvenim gredama i pogledom na kuhinju" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ RECENZIJE ═══════════════ -->
+<section id="glas">
+  <div class="wrap">
+    <div class="glas-top">
+      <p class="eyebrow"><span data-hr>Glas gostiju</span><span data-en>Guest voices</span><span data-de>Stimmen der Gäste</span></p>
+      <div class="stars">★★★★★</div>
+      <p class="glas-meta"><b>4,4 / 5</b> · <span data-hr>preko 440 recenzija · #1 restoran u Prvić Šepurinama</span><span data-en>over 440 reviews · #1 restaurant in Prvić Šepurine</span><span data-de>über 440 Bewertungen · #1 Restaurant in Prvić Šepurine</span></p>
+    </div>
+    <div class="quotes">
+      <div class="quote r">
+        <div class="mark">“</div>
+        <p data-hr>Predivan ugođaj i pogled na more, svježe pripremljena hrana. Vraćamo se brodom — sjajno mjesto!</p>
+        <p data-en>A really good ambience and view over the sea, fresh cooked food. We'll come back by boat — great place!</p>
+        <p data-de>Eine wirklich schöne Atmosphäre und Aussicht aufs Meer, frisch zubereitetes Essen. Wir kommen mit dem Boot wieder — toller Ort!</p>
+        <div class="by">Google · TripAdvisor</div>
+      </div>
+      <div class="quote r d1">
+        <div class="mark">“</div>
+        <p data-hr>Izvrsna hrana i iznimno ljubazno, susretljivo osoblje. Besprijekorno čisto, uz prekrasan pogled.</p>
+        <p data-en>Excellent food and extremely friendly, helpful staff. Spotless, and offers a stunning view.</p>
+        <p data-de>Hervorragendes Essen und überaus freundliches, hilfsbereites Personal. Tadellos sauber, mit traumhafter Aussicht.</p>
+        <div class="by">TripAdvisor</div>
+      </div>
+      <div class="quote r d2">
+        <div class="mark">“</div>
+        <p data-hr>Ugodan i topao restoran tik uz vodu. Tuna odrezak, pržena ribica i vongole bili su vrhunski.</p>
+        <p data-en>Pleasant and cozy restaurant right by the water. The tuna steak, fried small fish and vongole were over the top.</p>
+        <p data-de>Angenehmes, gemütliches Restaurant direkt am Wasser. Thunfisch, frittierte Fischchen und Vongole waren spitze.</p>
+        <div class="by">RestaurantGuru</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ KONTAKT ═══════════════ -->
+<section id="kontakt">
+  <div class="wrap">
+    <div class="kon-grid">
+      <!-- left -->
+      <div class="kon-left">
+        <p class="eyebrow"><span data-hr>Rezervacije i kontakt</span><span data-en>Reservations &amp; contact</span><span data-de>Reservierung &amp; Kontakt</span></p>
+        <h2 class="section-title"><span data-hr>Čujemo se,<br>pa <em>doplovite</em>.</span><span data-en>Let's talk,<br>then <em>sail in</em>.</span><span data-de>Melden Sie sich,<br>dann <em>kommen Sie</em>.</span></h2>
+        <a href="tel:+38522448511" class="kon-phone">+385 22 448 511</a>
+
+        <div class="kon-rows">
+          <div class="kon-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></div>
+            <div><div class="lbl"><span data-hr>Telefon &amp; mobitel</span><span data-en>Phone &amp; mobile</span><span data-de>Telefon &amp; Mobil</span></div>
+              <div class="val"><a href="tel:+38522448511">+385 22 448 511</a> · <a href="tel:+385915284325">+385 91 528 4325</a></div></div>
+          </div>
+          <div class="kon-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></div>
+            <div><div class="lbl">E-mail</div><div class="val"><a href="mailto:ribarski.dvor@gmail.com">ribarski.dvor@gmail.com</a></div></div>
+          </div>
+          <div class="kon-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21c5-5 7-8 7-11a7 7 0 10-14 0c0 3 2 6 7 11z"/></svg></div>
+            <div><div class="lbl"><span data-hr>Adresa</span><span data-en>Address</span><span data-de>Adresse</span></div>
+              <div class="val">Južna obala 91, 22234<br>Prvić Šepurine, <span data-hr>otok Prvić</span><span data-en>Prvić Island</span><span data-de>Insel Prvić</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right card -->
+      <div class="kon-card r d1">
+        <div class="kon-card-img"><img src="img/kuca.jpeg" alt="Bijela kamena kuća konobe Ribarski Dvor s natpisom i lučnim ulazom"></div>
+        <div class="kon-card-body">
+          <div class="h"><span data-hr>Radno vrijeme <em>· sezona</em></span><span data-en>Opening hours <em>· season</em></span><span data-de>Öffnungszeiten <em>· Saison</em></span></div>
+          <p><span data-hr>Radimo kroz toplu polovicu godine. Izvan sezone i za veće grupe javite se telefonom.</span><span data-en>We're open through the warm half of the year. Off-season and for larger groups, please call ahead.</span><span data-de>Wir haben in der warmen Jahreshälfte geöffnet. Außerhalb der Saison und für größere Gruppen rufen Sie bitte an.</span></p>
+          <div class="kon-hours">
+            <div class="kon-hr"><span><span data-hr>Travanj – Listopad</span><span data-en>April – October</span><span data-de>April – Oktober</span></span><span>11:00 – 23:00</span></div>
+            <div class="kon-hr"><span><span data-hr>Studeni – Ožujak</span><span data-en>November – March</span><span data-de>November – März</span></span><span class="clsd"><span data-hr>zatvoreno</span><span data-en>closed</span><span data-de>geschlossen</span></span></div>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=43.7299,15.7893" target="_blank" rel="noopener" class="map-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21c5-5 7-8 7-11a7 7 0 10-14 0c0 3 2 6 7 11z"/></svg>
+            <span data-hr>Otvori u Google Mapama</span><span data-en>Open in Google Maps</span><span data-de>In Google Maps öffnen</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="19" stroke="var(--paper)" stroke-width="1.5"/>
+              <path d="M11 24c4-6 14-6 18 0M14 20c0-3 2.6-5 6-5s6 2 6 5" stroke="var(--paper)" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="20" cy="15" r="1.6" fill="var(--paper)"/>
+              <path d="M20 28v6M16 34h8" stroke="var(--paper)" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-name">Ribarski Dvor</span>
+        </div>
+        <p class="foot-tagline"><span data-hr>Obiteljska konoba na otoku Prviću. Svježa riba, terasa na moru i Dalmacija bez žurbe — od 1981.</span><span data-en>A family tavern on the island of Prvić. Fresh fish, a terrace on the sea and unhurried Dalmatia — since 1981.</span><span data-de>Eine Familienkonoba auf der Insel Prvić. Frischer Fisch, eine Terrasse am Meer und Dalmatien ohne Eile — seit 1981.</span></p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h5><span data-hr>Stranica</span><span data-en>Pages</span><span data-de>Seiten</span></h5>
+          <a href="#prica"><span data-hr>Priča</span><span data-en>Story</span><span data-de>Geschichte</span></a>
+          <a href="#dolazak"><span data-hr>Dolazak</span><span data-en>Getting here</span><span data-de>Anreise</span></a>
+          <a href="#kuhinja"><span data-hr>Kuhinja</span><span data-en>Kitchen</span><span data-de>Küche</span></a>
+          <a href="#kontakt"><span data-hr>Kontakt</span><span data-en>Contact</span><span data-de>Kontakt</span></a>
+        </div>
+        <div class="foot-col">
+          <h5><span data-hr>Kontakt</span><span data-en>Contact</span><span data-de>Kontakt</span></h5>
+          <a href="tel:+38522448511">+385 22 448 511</a>
+          <a href="mailto:ribarski.dvor@gmail.com">ribarski.dvor@gmail.com</a>
+          <p>Prvić Šepurine, 22234</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Ribarski Dvor · <span data-hr>Obitelj Cukrov · Prvić Šepurine</span><span data-en>Cukrov family · Prvić Šepurine</span><span data-de>Familie Cukrov · Prvić Šepurine</span></span>
+      <span>Prvić · Šibensko-kninska županija · Hrvatska</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── jezici ── */
+function setLang(l){
+  document.documentElement.setAttribute('data-lang',l);
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+}
+function toggleMob(){document.getElementById('mob').classList.toggle('open')}
+
+/* ── nav stanje + hero zoom-out na scroll ── */
+const nav=document.getElementById('nav');
+const heroImg=document.querySelector('.hero-img img');
+let ticking=false;
+function onScroll(){
+  nav.classList.toggle('scrolled',window.scrollY>40);
+  if(heroImg){
+    const vh=window.innerHeight||1;
+    const p=Math.min(Math.max(window.scrollY/vh,0),1);   /* 0 na vrhu → 1 nakon jednog ekrana */
+    heroImg.style.transform='scale('+(1.32-0.32*p).toFixed(4)+')'; /* zoom-out dok skrolaš */
+  }
+  ticking=false;
+}
+window.addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(onScroll);}},{passive:true});
+window.addEventListener('resize',onScroll,{passive:true});
+onScroll();
+
+/* ── SplitText: razlomi tekst u znakove/riječi i sklopi ih kroz reveal ── */
+function splitNode(node,mode,ctr){
+  [...node.childNodes].forEach(child=>{
+    if(child.nodeType===3){                       /* tekstualni čvor */
+      const parts=mode==='char'?[...child.textContent]:child.textContent.split(/(\s+)/);
+      const frag=document.createDocumentFragment();
+      parts.forEach(p=>{
+        if(p==='')return;
+        if(/^\s+$/.test(p)){frag.appendChild(document.createTextNode(p));return;}
+        const s=document.createElement('span');
+        s.className='su';s.textContent=p;
+        s.style.transitionDelay=(ctr.i*(mode==='char'?0.024:0.05))+'s';
+        ctr.i++;frag.appendChild(s);
+      });
+      node.replaceChild(frag,child);
+    }else if(child.nodeType===1 && child.tagName!=='BR'){
+      splitNode(child,mode,ctr);                  /* zadrži <em> i sl. */
+    }
+  });
+}
+function doSplit(el,mode){
+  const langs=el.querySelectorAll('[data-hr],[data-en],[data-de]');
+  if(langs.length){langs.forEach(l=>splitNode(l,mode,{i:0}));}  /* svaki jezik kreće od 0 */
+  else{splitNode(el,mode,{i:0});}
+  el.classList.add(mode==='char'?'split-c':'split-w');
+}
+document.querySelectorAll('.section-title,.hero-title').forEach(el=>doSplit(el,'char'));
+document.querySelectorAll('.eyebrow,.hero-sub').forEach(el=>doSplit(el,'word'));
+
+/* ── jedinstveni reveal observer: .r fade, SplitText, clip-path galerija ── */
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.r,.split-c,.split-w,.gal-grid').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
